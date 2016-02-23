@@ -42,7 +42,7 @@ and open the template in the editor.
     <?php }else{ ?>
            <div style="background: url(<?php echo url('/').'/uploads/files/'.$attorney->banner_background; ?>) no-repeat center top; margin: 2px 0 0; padding: 5px 15px 0; overflow: hidden;">
                 <div style="float: none; width: 100%;">
-                    <p style="color: #ffbf00; font-family: Arial; font-size: 22px; font-weight: bold; margin: 0;">{!! $attorney->banner_heading !!}</p>
+                    <p style="color: #ffbf00; font-family: Arial; font-size: 20px; font-weight: bold; margin: 0;">{!! $attorney->banner_heading !!}</p>
                     <p style="color: #fff; font-family: Arial; font-size: 15px; margin: 10px 0 0; list-style: none;padding-left: 5px;line-height: 18px;">
                         <a target="_blank" style="float: right; margin: 0 0 0 10px;" href="{!! $attorney->website !!}" ><img src="{!! url('/').'/uploads/files/'.$attorney->attorney_img !!}"></a>
                          <?php $bannertext = json_decode($attorney->banner_text); 

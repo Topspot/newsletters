@@ -152,6 +152,7 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'SentinelAdmin'), functi
 });
 
 #FrontEndController
+Route::get('/', array('as' => 'home','uses' => 'FrontEndController@getLogin'));
 Route::get('login', array('as' => 'login','uses' => 'FrontEndController@getLogin'));
 Route::post('login','FrontEndController@postLogin');
 Route::get('register', array('as' => 'register','uses' => 'FrontEndController@getRegister'));
@@ -173,9 +174,9 @@ Route::post('contact',array('as' => 'contact','uses' => 'FrontEndController@post
 Route::get('newsletter/{newsletterId}', 'FrontEndController@getNewsletter');
 
 #frontend views
-Route::get('/', array('as' => 'home', function () {
-    return View::make('index');
-}));
+//Route::get('/', array('as' => 'home', function () {
+//    return View::make('index');
+//}));
 
 Route::get('blog', array('as' => 'blog', 'uses' => 'BlogController@getIndexFrontend'));
 Route::get('blog/{slug}/tag', 'BlogController@getBlogTagFrontend');

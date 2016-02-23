@@ -40,7 +40,7 @@ Create New article
                         </ul>
                     @endif
 
-                    {!! Form::open(['url' => 'admin/articles','files' => true]) !!}
+                    {!! Form::open(['url' => 'admin/articles','files' => true,'class' => 'articleform']) !!}
 
                     <div class="form-group">
                         {!! Form::label('article_title', 'Article Title: ') !!}

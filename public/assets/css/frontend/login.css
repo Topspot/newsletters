@@ -30,7 +30,7 @@ body {
 .box img{
     margin-top:10px;
     margin-bottom:5px;
-    margin:auto;
+    margin: -91px auto 10px;
 }
 .box h3{
     margin-top:0;

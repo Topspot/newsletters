@@ -527,7 +527,7 @@ $(document).ready(function(){
     $(addButton).click(function(){ //Once add button is clicked
         if(x < maxField){ //Check maximum number of input fields
             x++; //Increment field counter
-            $(wrapper).append(fieldHTML); // Add field html
+            $(wrapper).find('.col-md-6').append(fieldHTML); // Add field html
         }
     });
     $(addButtonn).click(function(){ //Once add button is clicked
@@ -539,25 +539,25 @@ $(document).ready(function(){
     $(addButton3).click(function(){ //Once add button is clicked
         if(x < maxField){ //Check maximum number of input fields
             x++; //Increment field counter
-            $('.field_wrapper3').append(fieldHTML3); // Add field html
+            $('.field_wrapper3').find('.col-md-6').append(fieldHTML3); // Add field html
         }
     });
     $(addButton4).click(function(){ //Once add button is clicked
         if(x < maxField){ //Check maximum number of input fields
             x++; //Increment field counter
-            $('.field_wrapper4').append(fieldHTML4); // Add field html
+            $('.field_wrapper4').find('.col-md-6').append(fieldHTML4); // Add field html
         }
     });
     $(addButton5).click(function(){ //Once add button is clicked
         if(x < maxField){ //Check maximum number of input fields
             x++; //Increment field counter
-            $('.field_wrapper5').append(fieldHTML5); // Add field html
+            $('.field_wrapper5').find('.col-md-6').append(fieldHTML5); // Add field html
         }
     });
     $(addButton6).click(function(){ //Once add button is clicked
         if(x < maxField){ //Check maximum number of input fields
             x++; //Increment field counter
-            $('.field_wrapper6').append(fieldHTML6); // Add field html
+            $('.field_wrapper6').find('.col-md-6').append(fieldHTML6); // Add field html
         }
     });
     $(wrapper).on('click', '.remove_button', function(e){ //Once remove button is clicked

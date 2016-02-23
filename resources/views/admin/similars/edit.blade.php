@@ -40,7 +40,7 @@ Edit a similar
                         </ul>
                     @endif
 
-                    {!! Form::model($similar, ['method' => 'PATCH', 'action' => ['SimilarsController@update', $similar->id],'files' => true]) !!}
+                    {!! Form::model($similar, ['method' => 'PATCH', 'action' => ['SimilarsController@update', $similar->id],'files' => true,'class' => 'similarform']) !!}
 
                     <div class="form-group">
                         {!! Form::label('google_heading', 'Google Heading: ') !!}

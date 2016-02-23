@@ -40,7 +40,7 @@ Edit a article
                         </ul>
                     @endif
 
-                    {!! Form::model($article, ['method' => 'PATCH', 'action' => ['ArticlesController@update', $article->id],'files' => true]) !!}
+                    {!! Form::model($article, ['method' => 'PATCH', 'action' => ['ArticlesController@update', $article->id],'files' => true,'class' => 'articleform']) !!}
 
                     <div class="form-group">
                         {!! Form::label('article_title', 'Article Title: ') !!}

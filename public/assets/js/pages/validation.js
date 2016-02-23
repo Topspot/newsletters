@@ -270,6 +270,236 @@
             }
             
         });
+        
+        $('.similarform').bootstrapValidator({
+            fields: {
+                google_heading: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Google feading is required and cannot be empty'
+                        }
+                    }
+                },
+                google_text: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Google text is required and cannot be empty'
+                        }
+                    }
+                },
+                google_image: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Google image  is required and cannot be empty'
+                        }
+                    }
+                },
+                yelp_image: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Yelp image is required and cannot be empty'
+                        }
+                    }
+                },
+                article1_heading: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article heading link is required and cannot be empty'
+                        }
+                    }
+                },
+                article1_detail: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article detail is required and cannot be empty'
+                        }
+                    }
+                },
+                article1_link: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article link is required and cannot be empty'
+                        }
+                    }
+                },
+                article1_image: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article image is required and cannot be empty'
+                        }
+                    }
+                },
+                article2_heading: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article heading is required and cannot be empty'
+                        }
+                    }
+                },
+                article2_detail: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article detail is required and cannot be empty'
+                        }
+                    }
+                },
+                article2_link: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article link is required and cannot be empty'
+                        }
+                    }
+                },
+                article2_image: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article image is required and cannot be empty'
+                        }
+                    }
+                },
+                article3_heading: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article heading is required and cannot be empty'
+                        }
+                    }
+                },
+                article3_detail: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article detail is required and cannot be empty'
+                        }
+                    }
+                },
+                article3_link: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article link is required and cannot be empty'
+                        }
+                    }
+                },
+                article3_image: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article image is required and cannot be empty'
+                        }
+                    }
+                },
+                practicearea_heading: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Heading is required and cannot be empty'
+                        }
+                    }
+                },
+                recipe_heading: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Recipe heading is required and cannot be empty'
+                        }
+                    }
+                },
+                recipe_sub_heading: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Recipe sub heading is required and cannot be empty'
+                        }
+                    }
+                },
+                ingredient_heading: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Ingredient heading is required and cannot be empty'
+                        }
+                    }
+                },
+                ingredient_image: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Ingredient image is required and cannot be empty'
+                        }
+                    }
+                },
+                ingredient_link: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Ingredient link is required and cannot be empty'
+                        }
+                    }
+                },              
+            
+            }
+            
+        });
+        
+        $('.articleform').bootstrapValidator({
+            fields: {
+                article_title: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article name is required and cannot be empty'
+                        }
+                    }
+                },
+                article_detail: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article detail is required and cannot be empty'
+                        }
+                    }
+                },
+                article_image: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article Image is required and cannot be empty'
+                        }
+                    }
+                },
+                article_link: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article Link is required and cannot be empty'
+                        }
+                    }
+                },
+                attorney_id: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Slecting Attorney is required and cannot be empty'
+                        }
+                    }
+                },             
+            
+            }
+            
+        });
+        $('.practiceform').bootstrapValidator({
+            fields: {
+                name: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article name is required and cannot be empty'
+                        }
+                    }
+                },
+                link: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article detail is required and cannot be empty'
+                        }
+                    }
+                },
+                attorney_id: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Article Image is required and cannot be empty'
+                        }
+                    }
+                },             
+            
+            }
+            
+        });
 //    });
 
     $(document).ready(function() {

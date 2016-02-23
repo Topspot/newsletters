@@ -24,6 +24,7 @@
     <link href="{{ asset('assets/css/metisMenu.css') }}" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/datatables/extensions/bootstrap/dataTables.bootstrap.css') }}" />
     <link href="{{ asset('assets/css/pages/tables.css') }}" rel="stylesheet" type="text/css" />
+     <link href="{{ asset('assets/css/pages/form_layouts.css') }}" rel="stylesheet" type="text/css"/>
 
     <!-- end of global css -->
     <!--page level css-->

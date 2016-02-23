@@ -21,7 +21,7 @@
     <div class="row">
         <div class="box animation flipInX">
             <div class="box1">
-            <img src="{{ asset('assets/images/josh-new.png') }}" alt="logo" class="img-responsive mar">
+            <img src="{{ asset('assets/images/logo.png') }}" alt="logo" class="img-responsive mar">
             <h3 class="text-primary">Login</h3>
                 <!-- Notifications -->
                 @include('notifications')
@@ -45,11 +45,11 @@
 
                     </div>
                     <input type="submit" class="btn btn-block btn-primary" value="Login">
-                    Don't have an account? <a href="{{ route('register') }}"><strong> Sign up</strong></a>
+                    <!--Don't have an account? <a href="{{ route('register') }}"><strong> Sign up</strong></a>-->
                 </form>
             </div>
         <div class="bg-light animation flipInX">
-            <a href="{{ route('forgot-password') }}">Forgot Password?</a>
+            <!--<a href="{{ route('forgot-password') }}">Forgot Password?</a>-->
         </div>
         </div>
     </div>

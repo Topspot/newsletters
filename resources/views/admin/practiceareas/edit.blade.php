@@ -40,7 +40,7 @@ Edit a practicearea
                         </ul>
                     @endif
 
-                    {!! Form::model($practicearea, ['method' => 'PATCH', 'action' => ['PracticeareasController@update', $practicearea->id]]) !!}
+                    {!! Form::model($practicearea, ['method' => 'PATCH', 'action' => ['PracticeareasController@update', $practicearea->id],'class' => 'practiceform']) !!}
 
                     <div class="form-group">
                         {!! Form::label('name', 'Name: ') !!}

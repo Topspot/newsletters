@@ -41,28 +41,10 @@ class FrontEndController extends JoshController
        $attorney =DB::table('attorneys')    
         ->where('url', '=', $access_url)       
         ->get();
-//print_r($attorney[0]->id);exit();
-//        $template=Template::find(1);
         $similar=Similar::find(1);
         $attorney=Attorney::find($attorney[0]->id);
-//       echo "<pre>";
-//        print_r($attorney->website);
-//         echo "</pre>";
-//          exit();
-//$att=Attorney::find(2);
-//       echo "<pre>";
-//        print_r($attorney);
-//         echo "</pre>";
-//       echo "<pre>";
-//        print_r($att->article);
-//         echo "</pre>";
-//       echo "<pre>";
-//        print_r($att->practiceareas);
-//         echo "</pre>";
-//$contents = View('newsletter')->render();
        return View('newsletter',  compact('attorney','similar'));
-//       print_r($contents);exit;
-//         return View('newsletter',  compact('contents'));
+
     }
 
     /**
@@ -92,7 +74,7 @@ class FrontEndController extends JoshController
         try {
             // Try to log the user in
             if (Sentinel::authenticate($request->only('email', 'password'), $request->get('remember-me', 0))) {
-                return Redirect::route("my-account")->with('success', Lang::get('auth/message.login.success'));
+                return Redirect::route("dashboard")->with('success', Lang::get('auth/message.login.success'));
             } else {
                 return Redirect::to('login')->with('error', 'Username or password is incorrect.');
                 //return Redirect::back()->withInput()->withErrors($validator);

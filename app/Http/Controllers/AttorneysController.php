@@ -62,7 +62,7 @@ class AttorneysController extends Controller {
 
 //---------------------------------------------- uploading images
         for($i=0;$i<5;$i++){     
-        if(isset($request->file($uploads[$i]))){
+        if($request->file($uploads[$i]) != null){
         $file_temp = $request->file($uploads[$i]);
         $extension       = $file_temp->getClientOriginalExtension() ?: 'png';
         $safeName        = str_random(10).'.'.$extension;
